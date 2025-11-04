@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   async function fetchEvents() {
     try {
-      const response = await fetch("http://localhost:5000/api/events");
+      const response = await fetch("https://cloth-donation-2.onrender.com");
       const events = await response.json();
 
       if (events.length === 0) {
